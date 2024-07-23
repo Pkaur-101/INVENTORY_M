@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AnalysisGraphsScreen extends StatelessWidget {
-  const AnalysisGraphsScreen({super.key});
+class ExcessInventoryScreen extends StatelessWidget {
+  const ExcessInventoryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,16 +26,16 @@ class AnalysisGraphsScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 10),
-                Image.asset('assets/graph1.jpg'),
+                Image.asset('assets/graph3.jpeg'),
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 20),
-                  child: Text('Average Sales in Each month'),
+                  child: Text('Quantity Left Over Each month'),
                 ),
                 const SizedBox(height: 20),
-                Image.asset('assets/graph2.jpg'),
+                Image.asset('assets/graph4.jpeg'),
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 20),
-                  child: Text('Days Until Stock-out in Each month'),
+                  child: Text('Quantity bought Each month'),
                 ),
               ],
             ),

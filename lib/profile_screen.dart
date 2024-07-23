@@ -34,14 +34,14 @@ class ProfileScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Name: Your Name',
+                      'Name: Parneet Kaur',
                       style: TextStyle(
                         fontSize: 18,
                         color: Colors.black,
                       ),
                     ),
                     Text(
-                      'UserID: 123456',
+                      'UserID: 8456912563',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.black,
@@ -72,9 +72,11 @@ class ProfileScreen extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.green,
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
               ),
-              child: const Text('Update Profile', style: TextStyle(fontSize: 16)),
+              child:
+                  const Text('Update Profile', style: TextStyle(fontSize: 16)),
             ),
           ],
         ),
