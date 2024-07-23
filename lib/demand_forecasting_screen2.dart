@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'analysis_graphs_screen.dart';
+import 'package:inventory/excess_inventory_screen.dart';
 
-class DemandForecastingScreen extends StatelessWidget {
-  const DemandForecastingScreen({super.key});
+class DemandForecastingScreen2 extends StatelessWidget {
+  const DemandForecastingScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Demand Forecasting'),
+        title: const Text('Excess Inventory'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -37,7 +37,7 @@ class DemandForecastingScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const AnalysisGraphsScreen(),
+                      builder: (context) => const ExcessInventoryScreen(),
                     ),
                   );
                 },

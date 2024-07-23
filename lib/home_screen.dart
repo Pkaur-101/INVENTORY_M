@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventory/demand_forecasting_screen2.dart';
 import 'demand_forecasting_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,9 +8,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Screen'),
-      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -34,7 +32,7 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 10),
-            const Text('Name: Your Name\nUserID: 123456'),
+            const Text('Name: Parneet Kaur\nUserID: 464651432'),
             const SizedBox(height: 20),
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -78,7 +76,14 @@ class HomeScreen extends StatelessWidget {
                   child: const Text('Stock-Out'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const DemandForecastingScreen2(),
+                      ),
+                    );
+                  },
                   child: const Text('Excess Inventory'),
                 ),
               ],
